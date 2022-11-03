@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <header>
+    <h1>SIMPLE CALCULATOR</h1>
+
+    <button class="switchDarkLight" data-theme="Dark">Switch Theme Dark / Light</button>
+  </header>
+  <br><br>
+  <div class="mainDiv">
+    <input type="text" class="mainInput">
+    <br><br>
+    <div class="btnArea">
+      <button class="calcBody2" id="clear">C</button>
+      <button class="calcBody" data-reference=" ( ">(</button>
+      <button class="calcBody" data-reference=" ) ">)</button>
+      <button class="calcBody" data-reference=" / ">/</button>
+      <br><br>
+      <button class="calcBody" data-reference="7">7</button>
+      <button class="calcBody" data-reference="8">8</button>
+      <button class="calcBody" data-reference="9">9</button>
+      <button class="calcBody" data-reference=" * ">*</button>
+      <br><br>
+      <button class="calcBody" data-reference="4">4</button>
+      <button class="calcBody" data-reference="5">5</button>
+      <button class="calcBody" data-reference="6">6</button>
+      <button class="calcBody" data-reference=" - ">-</button>
+      <br><br>
+      <button class="calcBody" data-reference="1">1</button>
+      <button class="calcBody" data-reference="2">2</button>
+      <button class="calcBody" data-reference="3">3</button>
+      <button class="calcBody" data-reference=" + ">+</button>
+      <br><br>
+      <button class="calcBody" data-reference="0">0</button>
+      <button class="calcBody" data-reference=".">.</button>
+      <button class="calcBody" data-reference=" % ">mod</button>
+      <button class="calcBody2" id="result">=</button>
+    </div>
+    <br>
+    <div class="resultDiv">
+      <h1>RESULT:</h1>
+      <button class="copyBtn">Copy</button>
+      <input type="text" class="result" disabled>
+    </div>
+  </div>
+
+  <FOOTEr>
+    <h3>Created By Matt Martini - 11/2022</h3>
+  </FOOTEr>
+</body>
+</html>
