@@ -4,9 +4,27 @@
   margin: 0px;
 }
 
+:root{
+  --main-color: black;
+  --text-color: #cccccc;
+  --text-color2: #666666;
+  --text-border: #999999;
+  --normal-color: white;
+}
+
+.greenBtn{
+  background-color: green;
+  font-weight: 750;
+  font-family: Ubuntu;
+  font-size: 15px;
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+}
+
 body {
-  background-color: black;
-  color: #cccccc;
+  background-color: var(--main-color);
+  color: var(--text-color);
 }
 
 h1{
@@ -26,22 +44,22 @@ header {
   font-size: 45px;
   height: 60px;
   text-align: right;
-  color: #666666;
+  color: var(--text-color2);
 }
 
 .switchDarkLight{
   align-self: center;
-  background-color: #666666;
+  background-color: var(--text-color2);
   border-radius: 8px;
   height: 30px;
-  color: white;
+  color: var(--normal-color);
   font-family: Ubuntu;
   font-weight: 550;
-  border: 2px solid #999999;
+  border: 2px solid var(--text-border);
 }
 
 .switchDarkLight:hover {
-  border: 2px solid white;
+  border: 2px solid var(--normal-color);
 }
 
 .mainDiv {
@@ -52,14 +70,14 @@ header {
 }
 
 .btnArea{
-  background-color: #666666;
+  background-color: var(--text-color2);
   padding: 25px;
   border-radius: 15px;
-  border: 3px solid black;
+  border: 3px solid var(--main-color);
 }
 
 .calcBody {
-  background-color: #999999;
+  background-color: var(--text-border);
   font-weight: 750;
   font-family: Ubuntu;
   font-size: 25px;
@@ -69,11 +87,11 @@ header {
 }
 
 .calcBody:hover{
-  border: 3px solid white;
+  border: 3px solid var(--normal-color);
 }
 
 .calcBody2 {
-  background-color: #999999;
+  background-color: var(--text-border);
   font-weight: 750;
   font-family: Ubuntu;
   font-size: 25px;
@@ -83,11 +101,11 @@ header {
 }
 
 .calcBody2:hover{
-  border: 3px solid white;
+  border: 3px solid var(--normal-color);
 }
 
 .copyBtn {
-  background-color: #cccccc;
+  background-color: var(--text-color);
   font-weight: 750;
   font-family: Ubuntu;
   font-size: 15px;
@@ -106,4 +124,9 @@ footer{
   justify-content: center;
   font-family: ubuntu;
   font-variant-caps: all-petite-caps;
+}
+
+.error{
+  color: white;
+  background-color: red;
 }
